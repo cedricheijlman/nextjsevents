@@ -7,6 +7,16 @@ import Link from "next/link";
 
 const EventCard = ({ title, image, location, date, id }) => {
   const path = `events/${id}`;
+
+  // date format
+  const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+  // location format
+  const formattedAddress = location.replace(", ", "\n");
   return (
     <div className={styles.container}>
       <img src={image} />
@@ -15,15 +25,15 @@ const EventCard = ({ title, image, location, date, id }) => {
 
         <div className={styles.infoBox}>
           <EventIcon />
-          <date>{date}</date>
+          <time className={styles.icon}>{humanReadableDate}</time>
         </div>
         <div className={styles.infoBox}>
           <LocationOnIcon />
-          <p>{location}</p>
+          <address className={styles.icon}>{formattedAddress}</address>
         </div>
         <div className={styles.buttonBox}>
           <Button>
-            <Link href={`events/${id}`}>Explore Event</Link>
+            <Link href={`/events/${id}`}>Explore Event</Link>
           </Button>
         </div>
       </div>

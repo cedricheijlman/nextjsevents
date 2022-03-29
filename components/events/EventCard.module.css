@@ -2,4 +2,14 @@
   border: 1px solid green;
   width: 90%;
   margin: 10px 0;
+  display: flex;
+}
+
+.container img {
+  width: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
 }

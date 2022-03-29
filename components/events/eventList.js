@@ -5,12 +5,12 @@ export const EventList = ({ items }) => {
   console.log(items);
   return (
     <div className={styles.container}>
-      {items.map((item) => {
+      {items.map((item, index) => {
         return (
           <EventCard
+            key={index}
             title={item.title}
             image={item.image}
-            description={item.description}
             location={item.location}
             date={item.date}
           />

@@ -4,6 +4,15 @@ import EventIcon from "@mui/icons-material/Event";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 export const EventInfo = ({ event }) => {
+  // date format
+  const humanReadableDate = new Date(event.date).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+  // location format
+  const formattedAddress = event.location.replace(", ", "\n");
   return (
     <>
       <h2 className={styles.title}>{event.title}</h2>
@@ -12,11 +21,11 @@ export const EventInfo = ({ event }) => {
         <div>
           <div className={styles.info}>
             <EventIcon />
-            <p>{event.date}</p>
+            <p>{humanReadableDate}</p>
           </div>
           <div className={styles.info}>
             <LocationOnIcon />
-            <p>{event.location}</p>
+            <p>{formattedAddress}</p>
           </div>
         </div>
       </div>

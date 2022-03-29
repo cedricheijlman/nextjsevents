@@ -5,7 +5,7 @@ import styles from "../../styles/AllEventsPage.module.css";
 
 const allEvents = getAllEvents();
 
-const allEventsPage = () => {
+const AllEventsPage = () => {
   return (
     <div className={styles.container}>
       <EventSearch />
@@ -14,4 +14,4 @@ const allEventsPage = () => {
   );
 };
 
-export default allEventsPage;
+export default AllEventsPage;

@@ -61,4 +61,4 @@ const FilteredEventsPage = () => {
   );
 };
 
-export default filteredEventsPage;
+export default FilteredEventsPage;

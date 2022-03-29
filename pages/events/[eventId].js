@@ -19,4 +19,4 @@ const EventDetailsPage = () => {
   );
 };
 
-export default eventDetailsPage;
+export default EventDetailsPage;

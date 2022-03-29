@@ -7,7 +7,7 @@ import { EventList } from "../../components/events/eventList";
 
 import styles from "../../styles/FilteredEvents.module.css";
 
-const filteredEventsPage = () => {
+const FilteredEventsPage = () => {
   const router = useRouter();
 
   const filterData = router.query.slug;

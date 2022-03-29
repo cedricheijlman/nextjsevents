@@ -2,7 +2,7 @@ import styles from "../../styles/EventDetailsPage.module.css";
 import { useRouter } from "next/router";
 import { getEventById } from "../../dummy-data";
 import { EventInfo } from "../../components/events/eventInfo";
-const eventDetailsPage = () => {
+const EventDetailsPage = () => {
   let router = useRouter();
 
   const eventId = router.query.eventId;

@@ -33,6 +33,7 @@ const filteredEventsPage = () => {
     return (
       <Fragment>
         <div className={styles.container}>
+          <h5>Invalid filter. Please adjust your values!</h5>
           <Button link={"/events"}>Show All Events</Button>
         </div>
       </Fragment>
@@ -45,7 +46,7 @@ const filteredEventsPage = () => {
     return (
       <Fragment>
         <div className={styles.container}>
-          <h2>No events found for the chosen filter!</h2>
+          <h5>No events found for the chosen filter!</h5>
           <Button link={"/events"}>Show All Events</Button>
         </div>
       </Fragment>
@@ -54,7 +55,7 @@ const filteredEventsPage = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Filtered Events</h2>
+      <h1>Filtered Events</h1>
       <EventList items={filteredEvents} />
     </div>
   );

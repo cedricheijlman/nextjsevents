@@ -11,16 +11,17 @@ const EventCard = ({ title, image, location, date }) => {
       <div className={styles.info}>
         <h2>{title}</h2>
 
-        <p>{location}</p>
-        <div>
+        <div className={styles.infoBox}>
           <EventIcon />
           <date>{date}</date>
         </div>
-        <div>
+        <div className={styles.infoBox}>
           <LocationOnIcon />
           <p>{location}</p>
         </div>
-        <Button>Explore Event</Button>
+        <div>
+          <Button>Explore Event</Button>
+        </div>
       </div>
     </div>
   );

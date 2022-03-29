@@ -11,5 +11,16 @@
 
 .info {
   display: flex;
+  padding: 10px;
   flex-direction: column;
+}
+
+.info h2 {
+  font-size: 21px;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
 }

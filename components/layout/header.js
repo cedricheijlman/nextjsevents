@@ -7,7 +7,7 @@ const Header = () => {
         <a className={styles.logo}>NextEvents</a>
       </Link>
       <Link href="/events">
-        <a className={styles.option}>All Events</a>
+        <a className={styles.option}>Browse All Events</a>
       </Link>
     </header>
   );

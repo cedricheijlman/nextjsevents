@@ -19,7 +19,7 @@ const EventCard = ({ title, image, location, date }) => {
           <LocationOnIcon />
           <p>{location}</p>
         </div>
-        <div>
+        <div className={styles.buttonBox}>
           <Button>Explore Event</Button>
         </div>
       </div>

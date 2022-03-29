@@ -1,26 +1,41 @@
 .container {
-  border: 1px solid green;
-  width: 90%;
+  width: 100%;
   margin: 10px 0;
   display: flex;
+  max-width: 550px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 .container img {
-  width: 200px;
+  width: 230px;
+  height: 190px;
+  border-radius: 7px 0 0 7px;
 }
 
 .info {
   display: flex;
-  padding: 10px;
+  padding: 15px 15px;
+  width: 100%;
   flex-direction: column;
 }
 
 .info h2 {
   font-size: 21px;
+  margin-bottom: 10px;
 }
 
 .infoBox {
   display: flex;
   align-items: center;
   font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  width: 100%;
 }

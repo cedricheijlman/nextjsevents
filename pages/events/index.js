@@ -1,7 +1,15 @@
+import { EventList } from "../../components/events/eventList";
+import { EventSearch } from "../../components/events/eventSearch";
+import { getAllEvents } from "../../dummy-data";
+import styles from "../../styles/AllEventsPage.module.css";
+
+const allEvents = getAllEvents();
+
 const allEventsPage = () => {
   return (
-    <div>
-      <h1>All Events</h1>
+    <div className={styles.container}>
+      <EventSearch />
+      <EventList items={allEvents} />
     </div>
   );
 };

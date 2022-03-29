@@ -13,6 +13,7 @@ export const EventList = ({ items }) => {
             image={item.image}
             location={item.location}
             date={item.date}
+            id={item.id}
           />
         );
       })}

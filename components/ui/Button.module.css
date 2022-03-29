@@ -6,5 +6,11 @@
   color: white;
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
   background-color: rgb(101, 147, 216);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.03);
 }

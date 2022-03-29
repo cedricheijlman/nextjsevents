@@ -3,8 +3,10 @@ import styles from "./EventCard.module.css";
 import EventIcon from "@mui/icons-material/Event";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Button from "../ui/button";
+import Link from "next/link";
 
-const EventCard = ({ title, image, location, date }) => {
+const EventCard = ({ title, image, location, date, id }) => {
+  const path = `events/${id}`;
   return (
     <div className={styles.container}>
       <img src={image} />
@@ -20,7 +22,9 @@ const EventCard = ({ title, image, location, date }) => {
           <p>{location}</p>
         </div>
         <div className={styles.buttonBox}>
-          <Button>Explore Event</Button>
+          <Button>
+            <Link href={`events/${id}`}>Explore Event</Link>
+          </Button>
         </div>
       </div>
     </div>

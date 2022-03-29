@@ -1,7 +1,7 @@
 import styles from "../../styles/EventDetailsPage.module.css";
 import { useRouter } from "next/router";
 import { getEventById } from "../../dummy-data";
-import { EventInfo } from "../../components/events/EventInfo";
+import { EventInfo } from "../../components/events/eventInfo";
 const eventDetailsPage = () => {
   let router = useRouter();
 

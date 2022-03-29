@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../ui/button";
+import styles from "./EventSearch.module.css";
 
 export const EventSearch = () => {
   return (
-    <form>
-      <div>
+    <form className={styles.formContainer}>
+      <div className={styles.options}>
         <div>
           <label htmlFor="year">Year</label>
           <select id="year">
